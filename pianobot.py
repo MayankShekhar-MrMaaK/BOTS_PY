@@ -11,6 +11,7 @@ def click(x,y):
     time.sleep(0.1) #This pauses the script for  seconds
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 
+    
 while keyboard.is_pressed('q') == False:
     if pyautogui.pixel(532, 400)[0] == 0:
         click(532, 400)
